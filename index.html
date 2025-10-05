@@ -21,12 +21,14 @@
       justify-content: center;
       align-items: center;
       gap: 10px;
+      padding: 0 10px;
+      text-align: center;
     }
     header h1{
-      font-size: 18px;
+      font-size: 32px;
     }
     header p{
-      font-size: 14px;
+      font-size: 18px;
     }
     main{
       height: 80%;
@@ -37,6 +39,7 @@
       align-items: center;
     }
     main .question{
+      width: 90%;
       padding-top: 40px;
       padding-left: 10px;
       display: flex;
@@ -46,7 +49,7 @@
       word-spacing: 1.5px;
     }
     main .question p{
-      font-size: 14px;
+      font-size: 18px;
     }
     main .question ol,ul{
       display: flex;
@@ -56,7 +59,7 @@
       line-height: 25px;
     }
     main .question li{
-      font-size: 14px;
+      font-size: 16px;
     }
     main .question hr{
       margin-top: 20px;
@@ -68,12 +71,9 @@
     main ul li span{
       font-weight: bold;
     }
-    @media (min-width: 768px) {
-    header h1{
-      font-size: 28px;
-    }
-    header p{
-      font-size: 18px;
+    @media (min-width: 413px) and (max-width: 1023px) {
+    main .question h3{
+      font-size: 24px;
     }
     main .question{
       width:60%;
@@ -82,10 +82,10 @@
       font-size: 18px;
     }
     main .question li{
-      font-size: 16px;
+      font-size: 18px;
     }
     }
-    @media (min-width: 1024px) {
+    @media (min-width: 1024px)  {
       header h1{
       font-size: 32px;
     }
@@ -102,7 +102,7 @@
   </header>
   <main>
     <div class="question">
-      <h3>How can i track my order?</h3>
+      <h3>How can I track my order?</h3>
       <p>You can track your order using the following steps:</p>
       <ol>
         <li>Go to the Order <a href="">Tracking Page</a></li>
@@ -112,14 +112,15 @@
       <p>if you encounter any issues, visit our <a href="">help center</a>.</p>
       <hr>
     </div>
-    <div class="question">
+    <div class="question" style="padding-bottom: 30px;">
       <h3>What is your return policy?</h3>
       <p>We offer a 30-day return policy on most items. Here are some key points:</p>
       <ul>
-        <li><span>item must be in original condition:</span> Unworn, unsed and unwashed.</li>
-        <li><span>item must be in original condition:</span> Unworn, unsed and unwashed.</li>
-        <li><span>item must be in original condition:</span> Unworn, unsed and unwashed.</li>
+        <li><span>Item must be in original condition:</span>Unworn, unsed and unwashed.</li>
+        <li><span>Include original packaging and tags:</span> All items should be returned with their original packaging and tags.</li>
+        <li><span>Proof of purchase:</span> A receipt or proof of purchase is required.</li>
       </ul>
+      <p>For more detailed information, read or full <a href="">Return Policy</a>.</p>
     </div>
 
   </main>
